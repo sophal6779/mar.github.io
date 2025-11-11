@@ -5,11 +5,11 @@
     }
 
     body {
-      background-color: #c9c3c5;
+      background-color: #f7f5f5;
     }
 
     .navbar img {
-      margin-top: 5px;
+      padding: 0 15px;
       margin-left: 25px;
       width: 220px;
       height: 50px;
@@ -20,7 +20,7 @@
       top: 0;
       z-index: 100;
       width: 100%;
-      background-color: #c9c3c5;
+      background-color: #e3e7e3;
       display: flex;
       justify-content: space-between;
       padding: 0 15px;
@@ -39,7 +39,7 @@
     .nav-center a {
       text-decoration: none;
       color: #353b3b;
-      padding: 23px 5px;
+      padding: 23px 15px;
       font-family: khmer os apsara;
       font-size: 20px;
       font-weight: bold;
@@ -57,13 +57,12 @@
     }
 
     .btn-nav {
-      margin-right: 20px;
-      margin-top: 10px;
-      background-color: #c9c3c5;
+      margin-right: 25px;
+      background-color: #e3e7e3;
       padding: 10px 35px;
       font-family: khmer os koulen;
       font-size: 16px;
-      border: 1.5px dashed #04574f;
+      border: 0.1px dashed #04574f;
       border-radius: 30px;
     }
 
@@ -123,11 +122,11 @@
       }
       .navbar img{
         display: flex;
-        width: 130px;
-        height: 35px;
+        width: 180px;
+        height: 40px;
       }
       .nav-login .btn-nav{
-        font-size: 14px;
+        font-size: 12px;
       }
     
      } 
@@ -142,6 +141,7 @@
     .cover img {
       border-radius: 20px;
       width: 95%;
+      height: 45vh;
       object-fit: cover;
       margin-top: 10px;
     }
@@ -157,19 +157,26 @@
     /* Container */
     .container {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+      grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
       width: 95%;
       margin: auto;
-      gap: 20px;
+      gap: 15px;
     }
 
     /* Product Card */
     .container .product-card {
-      background-color: rgb(238, 249, 246);
+      background-color: #f7f5f5;
+      border: 1px solid #dce1e1;
       width: 100%;
-      padding: 20px;
+      padding: 10px;
       margin-top: 20px;
       border-radius: 5px;
+    }
+    @media (max-width: 450px){
+    .container{
+      grid-template-columns: repeat(auto-fill, minmax(130px,1fr));
+    }
+      
     }
 
     .product-card:hover,
@@ -180,14 +187,22 @@
 
     .product-card img {
       width: 100%;
-      height: 250px;
+      height: 180px;
       border-radius: 5px;
+    }
+    .product-name {
+      font-family: khmer os battambang;
+      font-weight: normal;
+      font-size: 16px;
+      margin-top: 10px;
     }
 
     .price {
+      font-family: time new roman;
+      font-weight: bold;
       color: #04574f;
       font-size: 22px;
-      margin-top: 20px;
+      margin-top: 13px;
       margin-bottom: 8px;
     }
 
@@ -210,4 +225,15 @@
       justify-content: center;
       align-items: center;
       gap: 10px;
+    }
+
+    .footer{
+      background-color: #e3e7e3;
+      padding: 20px;
+      border: outset;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #04574f;
+      margin-top: 20px;
     }
